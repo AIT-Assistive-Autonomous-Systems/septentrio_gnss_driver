@@ -31,6 +31,8 @@ septentrio_gnss_driver:
 
     datum: Default
 
+    lock_utm_zone: true
+
     att_offset:
       heading: 0.0
       pitch: 0.0
@@ -53,9 +55,9 @@ septentrio_gnss_driver:
         id: "NTR1"
         caster: "193.178.171.29"
         caster_port: 2101
-        username: ""
-        password: ""
-        mountpoint: ""
+        username: "ForschArse"
+        password: "Lyilfdh4"
+        mountpoint: "RTK-3-ETRF"
         version: "v1"
         tls: false
         fingerprint: ""
@@ -101,7 +103,7 @@ septentrio_gnss_driver:
       exteventinsnavgeod: true
       imu: true
       localization: true
-      tf: true
+      tf: false
 
     # logger
 

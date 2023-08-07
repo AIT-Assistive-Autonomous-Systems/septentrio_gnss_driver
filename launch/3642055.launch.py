@@ -39,7 +39,7 @@ def generate_launch_description():
         arguments = "0 0 0 0 0 0 imu aux1".split(' ')
     )
 
-    default_file_name = '55.yaml'
+    default_file_name = '3642055.yaml'
     name_arg_file_name = "file_name"
     arg_file_name = DeclareLaunchArgument(name_arg_file_name,
                                           default_value=TextSubstitution(text=str(default_file_name)))
@@ -52,26 +52,25 @@ def generate_launch_description():
             executable='septentrio_gnss_driver_node',
             name='septentrio_gnss_driver',
             remappings=[
-                ('/attcoveuler', '/septentrio55/attcoveuler'),
-                ('/atteuler', '/septentrio55/atteuler'),
-                ('/basevectorcart', '/septentrio55/basevectorcart'),
-                ('/basevectorgeod', '/septentrio55/basevectorgeod'),
-                ('/gpgga', '/septentrio55/gpgga'),
-                ('/gpgsa', '/septentrio55/gpgsa'),
-                ('/gprmc', '/septentrio55/gprmc'),
-                ('/gpsfix', '/septentrio55/gpsfix'),
-                ('/gpst', '/septentrio55/gpst'),
-                ('/measepoch', '/septentrio55/measepoch'),
-                ('/navsatfix', '/septentrio55/navsatfix'),
-                ('/poscovcartesian', '/septentrio55/poscovcartesian'),
-                ('/poscovgeodetic', '/septentrio55/poscovgeodetic'),
-                ('/pose', '/septentrio55/pose'),
-                ('/pvtcartesian', '/septentrio55/pvtcartesian'),
-                ('/pvtgeodetic', '/septentrio55/pvtgeodetic'),
-                ('/twist_gnss', '/septentrio55/twist_gnss'),
-                ('/velcovgeodetic', '/septentrio55/velcovgeodetic')
+                ('/attcoveuler', '/septentrio3642055/attcoveuler'),
+                ('/atteuler', '/septentrio3642055/atteuler'),
+                ('/basevectorcart', '/septentrio3642055/basevectorcart'),
+                ('/basevectorgeod', '/septentrio3642055/basevectorgeod'),
+                ('/gpgga', '/septentrio3642055/gpgga'),
+                ('/gpgsa', '/septentrio3642055/gpgsa'),
+                ('/gprmc', '/septentrio3642055/gprmc'),
+                ('/gpsfix', '/septentrio3642055/gpsfix'),
+                ('/gpst', '/septentrio3642055/gpst'),
+                ('/measepoch', '/septentrio3642055/measepoch'),
+                ('/navsatfix', '/septentrio3642055/navsatfix'),
+                ('/poscovcartesian', '/septentrio3642055/poscovcartesian'),
+                ('/poscovgeodetic', '/septentrio3642055/poscovgeodetic'),
+                ('/pose', '/septentrio3642055/pose'),
+                ('/pvtcartesian', '/septentrio3642055/pvtcartesian'),
+                ('/pvtgeodetic', '/septentrio3642055/pvtgeodetic'),
+                ('/twist_gnss', '/septentrio3642055/twist_gnss'),
+                ('/velcovgeodetic', '/septentrio3642055/velcovgeodetic')
             ],
-            # namespace='septentrio_51',
             emulate_tty=True,
             sigterm_timeout = '10',
             parameters=[LaunchConfiguration(name_arg_file_path)])
